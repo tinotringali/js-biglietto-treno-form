@@ -14,31 +14,56 @@
 </head>
 <body>
     <div class="passenger p-3 mt-2">
-        <h5 class="pb-2">Calcola il prezzo del tuo boglietto</h5>
+        <h5 class="pb-2 text-light">Calcola il prezzo del tuo boglietto</h5>
         <form class="row flex-column gx-3 gy-2 align-items-center">
             <div class="col-9">
-                <h6>Nome Cognome</h6>
-                <input type="text" class="form-control" id="specificSizeInputName">
+                <h6 class="text-light">Nome Cognome</h6>
+                <input type="text" class="form-control" id="dati-utente">
             </div>
             <div class="col-9">
-                <h6>Km da percorrere</h6>
+                <h6 class="text-light" id="km">Km da percorrere</h6>
                 <div class="input-group">
-                    <input type="text" class="form-control" id="specificSizeInputGroupUsername">
+                    <input type="text" class="form-control" id="km-percorrezza">
                 </div>
             </div>
             <div class="col-9 pb-3">
-                <h6>Fascia d'età</h6>
-                <select class="form-select" id="specificSizeSelect">
+                <h6 class="text-light">Fascia d'età</h6>
+                <select class="form-select" id="age">
                     <option selected>Scegli</option>
-                    <option value="1">Minorenne</option>
-                    <option value="2">Maggiorenne</option>
-                    <option value="3">Over 65</option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
                 </select>
             </div>
-            <button type="button" class="btn btn-success">Genera</button>
-            <button type="button" class="btn btn-light">Annulla</button>
+            <button type="button" class="btn btn-success" id="genera">Genera</button>
+            <button type="button" class="btn btn-light" id="annulla">Annulla</button>
         </form>
     </div>
+    <div class="card m-auto mt-5" style="width: 18rem; width: 37.5rem;">
+        <div class="card-header">
+          Il tuo biglietto
+        </div>
+        <table class="table">
+            <thead>
+              <tr class="table-danger">
+                <th scope="col">Nome passeggero</th>
+                <th scope="col">Offerta</th>
+                <th scope="col">Carrozza</th>
+                <th scope="col">Codice CP</th>
+                <th scope="col">Costo biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-success">
+                <td scope="row">dati passeggero</td>
+                <td>offerta</td>
+                <td>Numero carrozza</td>
+                <td>codiceCP</td>
+                <td>costo</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
     <!-- file javascript -->
     <script src="js/main.js"></script>
     <!-- file javascript -->
