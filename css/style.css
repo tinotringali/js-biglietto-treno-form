@@ -1,0 +1,12 @@
+body{
+    background-image: url("../img/sfondo.jpg");
+    background-size: cover;
+}
+
+.passenger{
+    margin: auto;
+    width: 350px;
+    background-color: #dc042b;
+    border-radius: 10px;
+    opacity: 1;
+}
